@@ -385,7 +385,7 @@ def Weibull_probability_plot(
     probability_plot_xylims(x=x, y=y, dist="weibull", spacing=0.1)
     probability_plot_xyticks()
     plt.subplots_adjust(top=0.92, bottom=0.09, left=0.12, right=0.94)
-    return plt.gcf()
+    return plt.gcf(), alpha, beta
 
 
 def Loglogistic_probability_plot(
